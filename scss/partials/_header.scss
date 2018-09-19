@@ -1,0 +1,32 @@
+// HEADER
+#info {
+  .logo a:hover {
+    img {
+      opacity: 0.8;
+    }
+  }
+  .info {
+    font-size: $small-font-size;
+    li {
+      padding: 8px 0;
+      color: $text-color;
+      strong {
+        color: $second-color;
+      }
+      i {
+        width: 70px;
+        padding-right: 16px;
+        font-size: 36px;
+        line-height: 45px;
+        color: $main-color;
+        text-align: center;
+      }
+      .email a {
+        color: $text-color;
+      }
+    }
+    li:not(:last-child) {
+      padding-right: 25px;
+    }
+  }
+}

@@ -1,0 +1,226 @@
+// MENU
+#menu {
+  nav {
+    width: 60%;
+  }
+  background-color: $main-color;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-menu {
+    padding: 8px 0;
+    .nav-menu-item {
+      display: inline-block;
+      position: relative;
+      padding: 16px 0;
+      margin-right: 32px;
+      cursor: pointer;
+      & > a {
+        position: relative;
+        text-transform: uppercase;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -27px;
+          width: 100%;
+          height: 5px;
+          background-color: $third-color;
+          transition: all 0.33s ease-out;
+          opacity: 0;
+        }
+      }
+      &:hover a::after {
+        opacity: 1;
+      }
+      & > a {
+        font-size: $small-font-size;
+        font-weight: bold;
+        color: $third-color;
+        text-decoration: none;
+      }
+      &.drop-head::after {
+        content: "\f107";
+        font-family: "Font Awesome 5 Free";
+        color: $third-color;
+        margin-left: 10px;
+        margin-right: 0;
+        position: absolute;
+        right: -16px;
+        top: 20px;
+        transition: all 0.3s ease-in-out;
+        font-size: 12px;
+        font-weight: 900;
+      }
+      &.drop-head:hover {
+        [class*="drop-menu"] {
+          top: 75px;
+          visibility: visible;
+          opacity: 1;
+        }
+        .sub-drop-menu {
+          top: 0;
+        }
+      }
+      [class*="drop-menu"] {
+        position: absolute;
+        top: 88px;
+        left: 0;
+        width: 200px;
+        padding: 10px 20px;
+        background-color: $third-color;
+        transition: all 0.5s;
+        visibility: hidden;
+        opacity: 0;
+        .drop-item {
+          padding: 8px;
+          transition: all 0.3s;
+          &:not(:last-child) {
+            border-bottom: 1px solid lighten($text-color, 40);
+          }
+          a {
+            font-size: $small-font-size;
+            font-weight: 500;
+            color: $text-color;
+            text-decoration: none;
+          }
+          &::before {
+            content: "\f105";
+            font-family: "Font Awesome 5 Free";
+            color: $main-color;
+            position: absolute;
+            opacity: 0;
+            transition: all 0.2s ease-in-out 0s;
+            font-weight: 900;
+            left: 14px;
+          }
+          &:hover {
+            padding-left: 12px;
+            a {
+              color: $main-color;
+            }
+            &::before {
+              left: 20px;
+              opacity: 1;
+            }
+          }
+        }
+      }
+      .big-drop-menu {
+        left: -154px;
+        width: 1140px;
+        padding: 20px;
+        .sub-drop-menu {
+          position: relative;
+          width: 25%;
+          top: 0;
+          padding: 0 20px;
+          &:not(:last-child) {
+            border-right: 1px solid lighten($text-color, 40);
+          }
+        }
+      }
+    }
+  }
+  .social-search {
+    .social-links ul {
+      padding: 8px 0;
+      li {
+        padding-right: 12px;
+        a {
+          display: block;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          transition: all 0.5s;
+          &::before {
+            font-family: "Font Awesome 5 Brands";
+            color: $third-color;
+            font-weight: 400;
+            line-height: 40px;
+            font-size: 15px;
+          }
+          &[href*="facebook.com"]::before {
+            content: "\f39e";
+          }
+          &[href*="youtube.com"]::before {
+            content: "\f167";
+          }
+          &[href*="twitter.com"]::before {
+            content: "\f099";
+          }
+          &[href*="linkedin.com"]::before {
+            content: "\f0e1";
+          }
+          &[href*="instagram.com"]::before {
+            content: "\f16d";
+          }
+          &:hover {
+            text-decoration: none;
+          }
+          &[href*="facebook.com"]:hover {
+            background-color: #3b5998;
+          }
+          &[href*="youtube.com"]:hover {
+            background-color: #bb0000;
+          }
+          &[href*="twitter.com"]:hover {
+            background-color: #00aced;
+          }
+          &[href*="linkedin.com"]:hover {
+            background-color: #007bb6;
+          }
+          &[href*="instagram.com"]:hover {
+            background-color: #517fa4;
+          }
+        }
+      }
+    }
+    .search {
+      position: relative;
+      a {
+        font-size: $small-font-size;
+        color: $third-color;
+      }
+      .search-form {
+        position: absolute;
+        width: 500px;
+        top: 48px;
+        right: 0px;
+        padding: 25px 30px;
+        background-color: $third-color;
+        transition: all 0.5s;
+        display: none;
+        overflow: hidden;
+        .form-group {
+          margin: 0;
+          form {
+            .form-control {
+              width: 340px;
+              height: 45px;
+              border: 5px solid $text-color;
+              border-radius: 0;
+            }
+            .black-btn {
+              width: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .social-search {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .search-form {
+    width: auto !important;
+  }
+}

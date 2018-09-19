@@ -1,0 +1,146 @@
+// SLIDER
+@keyframes toLeft {
+  from {
+    margin-left: 50px;
+  }
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+@keyframes toRight {
+  from {
+    margin-right: 50px;
+  }
+  to {
+    margin-right: 0;
+    opacity: 1;
+  }
+}
+@keyframes visibled {
+  to {
+    opacity: 1;
+  }
+}
+#slider {
+  .carousel-indicators {
+    li {
+      width: 12px;
+      height: 12px;
+      border-radius: 12px;
+      background-color: $third-color;
+      transition: all 0.5s;
+      &.active {
+        height: 30px;
+        background-color: $main-color;
+      }
+    }
+  }
+  .carousel-inner {
+    .carousel-item {
+      background-color: black;
+      transition-duration: 2s;
+      &.active {
+      }
+      img {
+        opacity: 0.5;
+      }
+      .carousel-caption {
+        top: 20%;
+        right: 15%;
+        left: 15%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        h5 {
+          animation-delay: 2s !important;
+          opacity: 0;
+          a {
+            font-family: $second-font;
+            font-size: 60px;
+            font-weight: bold;
+            color: $third-color;
+            text-decoration: none;
+            transition: all 0.5s;
+          }
+        }
+        p {
+          font-size: $slide-font-size;
+          color: lighten($text-color, 30);
+          transition: all 0.5s;
+          animation-delay: 2.5s !important;
+          opacity: 0;
+        }
+        .toLeft {
+          animation: toLeft 1s ease forwards;
+        }
+        .toRight {
+          animation: toRight 1s ease forwards;
+        }
+        .visibled {
+          animation: visibled 0.5s ease forwards;
+        }
+        .buttons {
+          opacity: 0;
+          animation: visibled 0.5s ease 3s forwards;
+          a {
+            display: inline-block;
+            width: 150px;
+            text-transform: uppercase;
+            &:first-child {
+              margin-right: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  [class*="carousel-control"] {
+    top: 40%;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    opacity: 0;
+    background-color: $text-color;
+    transition: all 0.3s;
+  }
+  .carousel-control-prev {
+    left: 20px;
+  }
+  .carousel-control-next {
+    right: 20px;
+  }
+  &:hover {
+    [class*="carousel-control"] {
+      top: 44%;
+      opacity: 0.6;
+    }
+  }
+}
+
+@media screen and (max-width: 1139px) {
+  #slider .carousel-caption {
+    h5 a {
+      font-size: 32px !important;
+    }
+    p {
+      font-size: 15px !important;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  #slider .carousel-caption {
+    top: 10% !important;
+    right: 10% !important;
+    left: 10% !important;
+    p {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  #slider .carousel-caption {
+    .buttons {
+      display: none;
+    }
+  }
+}

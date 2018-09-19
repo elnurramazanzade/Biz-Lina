@@ -1,0 +1,50 @@
+// BODY
+body {
+  font-family: $main-font;
+}
+
+// SECTIONS
+
+// BUTTONS
+%main-btn{
+  display: block;
+  width: 130px;
+  height: 45px;
+  padding: 10px 20px;
+  font-size: $small-font-size;
+  line-height: 25px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.white-btn {
+  @extend %main-btn;
+  background-color: $main-color;
+  color: white;
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+.black-btn {
+  @extend %main-btn;
+  background-color: $main-color;
+  color: white;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+.colored-btn {
+  @extend %main-btn;
+  background-color: white;
+  color: black;
+  &:hover {
+    background-color: $main-color;
+    color: white;
+  }
+}
