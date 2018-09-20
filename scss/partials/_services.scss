@@ -1,0 +1,60 @@
+// FEATURES
+#services {
+  background-image: url("../img/service/features-background.jpg");
+  background-position: right;
+  background-size: cover;
+  .service-item {
+    margin: 20px 0;
+    .icon {
+      margin-top: 20px;
+      position: relative;
+      display: block;
+      width: 95px;
+      height: 95px;
+      border-radius: 100%;
+      text-align: center;
+      color: $main-color;
+      background-color: $third-color;
+      i {
+        font-size: $slide-font-size * 2;
+        line-height: 95px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        border: 4px solid $third-color;
+        border-radius: 100%;
+        opacity: 0;
+        transition: all 0.3s;
+      }
+      &:hover::before {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+    }
+    .service-text {
+      width: 70%;
+      padding-left: 25px;
+      a {
+        color: $second-color;
+        h5 {
+          font-size: $main-font-size * 1.4;
+          font-weight: bold;
+          margin: 16px 0;
+        }
+        &:hover {
+          color: $main-color;
+          text-decoration: none;
+        }
+      }
+      p {
+        font-size: $main-font-size;
+        line-height: 28px;
+        color: $text-color;
+      }
+    }
+  }
+}

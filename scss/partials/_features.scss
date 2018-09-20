@@ -1,0 +1,79 @@
+// FEATURES
+#features {
+  .feature-item {
+    margin: 20px 10px;
+    padding: 30px 30px 40px;
+    box-shadow: 0px 0px 32px 0px rgba(122, 122, 122, 0.1);
+    transition: all 0.3s;
+    a {
+      color: $second-color;
+      h5 {
+        font-size: $main-font-size * 1.4;
+        font-weight: bold;
+        margin: 16px 0;
+      }
+      span {
+        font-size: $small-font-size;
+        font-weight: bold;
+        transition: all 0.3s;
+        &::after {
+          content: "\f30b";
+          font-family: "Font Awesome 5 Free";
+          padding-left: 6px;
+          font-size: $main-font-size * 0.75;
+          font-weight: 900;
+        }
+        &:hover {
+          padding-left: 10px;
+          &::after {
+            content: "\f00c";
+          }
+        }
+      }
+      &:hover {
+        color: $main-color;
+        text-decoration: none;
+      }
+    }
+    .icon {
+      position: relative;
+      display: block;
+      width: 95px;
+      height: 95px;
+      margin: 10px 50%;
+      transform: translateX(-50%);
+      border-radius: 100%;
+      color: $main-color;
+      background-color: #0b60a90f;
+      i {
+        font-size: $slide-font-size * 2;
+        line-height: 95px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        border: 4px solid #0b60a90f;
+        border-radius: 100%;
+        opacity: 0;
+        transition: all 0.3s;
+      }
+      &:hover::before {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+    }
+
+    p {
+      font-size: $main-font-size;
+      line-height: 28px;
+      color: $text-color;
+    }
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
+    }
+  }
+}

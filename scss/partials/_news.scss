@@ -1,0 +1,86 @@
+// FEATURES
+#news {
+  .new-item {
+    margin: 20px 10px;
+    box-shadow: 0px 0px 32px 0px rgba(122, 122, 122, 0.1);
+    transition: all 0.3s;
+    .image {
+      width: 100%;
+      overflow: hidden;
+      img {
+        width: 100%;
+        transition: all 1s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .content {
+      padding: 30px 30px 40px;
+      a {
+        color: $second-color;
+        h5 {
+          font-size: $main-font-size * 1.4;
+          font-weight: bold;
+          margin: 16px 0;
+        }
+        span {
+          font-size: $small-font-size;
+          font-weight: bold;
+          transition: all 0.3s;
+          &::after {
+            content: "\f30b";
+            font-family: "Font Awesome 5 Free";
+            padding-left: 6px;
+            font-size: $main-font-size * 0.75;
+            font-weight: 900;
+          }
+          &:hover {
+            padding-left: 10px;
+            &::after {
+              content: "\f00c";
+            }
+          }
+        }
+        &:hover {
+          color: $main-color;
+          text-decoration: none;
+        }
+      }
+      & > span {
+        display: inline-block;
+        margin: 0 10px 20px 0;
+        font-size: $small-font-size;
+        color: $text-color;
+        &::before {
+          content: "\f07c";
+          font-family: "Font Awesome 5 Free";
+          font-size: 13px;
+          height: 15px;
+          margin-right: 8px;
+        }
+        &.date::before {
+          content: "\f274";
+        }
+      }
+      p {
+        font-size: $main-font-size;
+        line-height: 28px;
+        color: $text-color;
+      }
+    }
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+#buy-now {
+  .row {
+    padding: 40px;
+    background-color: $second-color;
+    h3 {
+      line-height: 45px;
+    }
+  }
+}

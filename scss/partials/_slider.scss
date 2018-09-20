@@ -24,6 +24,7 @@
 }
 #slider {
   .carousel-indicators {
+    height: 30px;
     li {
       width: 12px;
       height: 12px;
@@ -94,14 +95,21 @@
       }
     }
   }
-  [class*="carousel-control"] {
+  a[class*="carousel-control"] {
     top: 40%;
     width: 45px;
     height: 45px;
     padding: 10px;
     opacity: 0;
-    background-color: $text-color;
+    background-color: rgba(14, 14, 14, 0.26);
     transition: all 0.3s;
+    span[class*="carousel-control"] {
+      width: 15px;
+      height: 15px;
+    }
+    &:hover {
+      background-color: $main-color;
+    }
   }
   .carousel-control-prev {
     left: 20px;
@@ -112,7 +120,7 @@
   &:hover {
     [class*="carousel-control"] {
       top: 44%;
-      opacity: 0.6;
+      opacity: 1;
     }
   }
 }
