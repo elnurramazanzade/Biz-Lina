@@ -15,7 +15,7 @@ section .section-heading h3 {
     position: absolute;
     width: 80px;
     height: 2px;
-    bottom: 5px;
+    bottom: 10px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -25,7 +25,7 @@ section .section-heading h3 {
     position: absolute;
     width: 50px;
     height: 2px;
-    bottom: 0px;
+    bottom: 5px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -86,7 +86,8 @@ section .section-heading p {
     height: 40px;
     padding: 10px; }
     #btn-scrollup a i {
-      font-size: 18px; }
+      font-size: 18px;
+      color: white; }
 
 #info .logo a:hover img {
   opacity: 0.8; }
@@ -499,6 +500,7 @@ section .section-heading p {
     height: 100%;
     background-color: black;
     opacity: 0.5; }
+  #template h3,
   #template p {
     color: white; }
 
@@ -642,7 +644,7 @@ section .section-heading p {
 
 #buy-now .row {
   padding: 40px;
-  background-color: black; }
+  background-color: #25292f; }
   #buy-now .row h3 {
     line-height: 45px; }
 
@@ -721,5 +723,63 @@ section .section-heading p {
             transform: translateY(-10px);
     -webkit-box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
             box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15); }
+
+#carousel {
+  background-color: #25292f; }
+  #carousel .section-heading h3,
+  #carousel .section-heading p {
+    color: white; }
+  #carousel #carousel-1 {
+    position: relative; }
+    #carousel #carousel-1 .rating {
+      padding: 30px 30px 40px;
+      background-color: white; }
+      #carousel #carousel-1 .rating .image {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin: 0 auto 20px; }
+      #carousel #carousel-1 .rating .content .rate ul {
+        padding: 0;
+        list-style: none; }
+        #carousel #carousel-1 .rating .content .rate ul li {
+          padding: 0 2px; }
+          #carousel #carousel-1 .rating .content .rate ul li i {
+            color: #ffa500; }
+      #carousel #carousel-1 .rating .content a {
+        color: black; }
+        #carousel #carousel-1 .rating .content a h5 {
+          font-size: 22.4px;
+          font-weight: bold;
+          margin: 16px 0; }
+        #carousel #carousel-1 .rating .content a:hover {
+          color: #0b60a9;
+          text-decoration: none; }
+      #carousel #carousel-1 .rating .content p {
+        padding: 0 20px;
+        font-size: 16px;
+        line-height: 28px;
+        font-style: italic;
+        color: #888; }
+      #carousel #carousel-1 .rating .content span {
+        font-size: 14px;
+        color: #888; }
+    #carousel #carousel-1 .owl-nav {
+      position: absolute;
+      top: -60px;
+      right: 0; }
+      #carousel #carousel-1 .owl-nav button {
+        margin-left: 16px;
+        width: 36px;
+        height: 36px;
+        background-color: white; }
+        #carousel #carousel-1 .owl-nav button span {
+          font-size: 25px;
+          font-weight: bold;
+          line-height: 25px; }
+        #carousel #carousel-1 .owl-nav button:hover {
+          color: white;
+          background-color: #0b60a9; }
 
 /*# sourceMappingURL=style.css.map */

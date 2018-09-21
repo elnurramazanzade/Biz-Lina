@@ -1,0 +1,87 @@
+// FEATURES
+#carousel {
+  background-color: #25292f;
+  .section-heading {
+    h3,
+    p {
+      color: $third-color;
+    }
+  }
+  #carousel-1 {
+    position: relative;
+    .rating {
+      padding: 30px 30px 40px;
+      background-color: $third-color;
+      .image {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin: 0 auto 20px;
+        img {
+        }
+      }
+      .content {
+        .rate {
+          ul {
+            padding: 0;
+            list-style: none;
+            li {
+              padding: 0 2px;
+              i {
+                color: #ffa500;
+              }
+            }
+          }
+        }
+        a {
+          color: $second-color;
+          h5 {
+            font-size: $main-font-size * 1.4;
+            font-weight: bold;
+            margin: 16px 0;
+          }
+          &:hover {
+            color: $main-color;
+            text-decoration: none;
+          }
+        }
+        p {
+          padding: 0 20px;
+          font-size: $main-font-size;
+          line-height: 28px;
+          font-style: italic;
+          color: $text-color;
+        }
+        span {
+          font-size: $small-font-size;
+          color: $text-color;
+        }
+      }
+    }
+    .owl-nav {
+      position: absolute;
+      top: -60px;
+      right: 0;
+      button {
+        margin-left: 16px;
+        width: 36px;
+        height: 36px;
+        background-color: $third-color;
+        &.owl-prev {
+        }
+        &.owl-next {
+        }
+        span {
+          font-size: 25px;
+          font-weight: bold;
+          line-height: 25px;
+        }
+        &:hover {
+          color: $third-color;
+          background-color: $main-color;
+        }
+      }
+    }
+  }
+}
