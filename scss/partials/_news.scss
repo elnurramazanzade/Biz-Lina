@@ -17,13 +17,15 @@
     }
     .content {
       padding: 30px 30px 40px;
-      a {
-        color: $second-color;
-        h5 {
+      h5 {
+        a {
           font-size: $main-font-size * 1.4;
           font-weight: bold;
           margin: 16px 0;
         }
+      }
+      a {
+        color: $second-color;
         span {
           font-size: $small-font-size;
           font-weight: bold;

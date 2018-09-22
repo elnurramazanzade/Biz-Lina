@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // SCROLL BODY SLOWLY
+  // SCROLL TO TOP
   $("#btn-scrollup").on("click", function(e) {
     e.preventDefault();
     $("html,body").animate(
@@ -45,15 +45,12 @@ $(document).ready(function() {
   });
   $("#carousel-2").owlCarousel({
     loop: true,
-    margin: 50,
+    margin: 30,
     nav: true,
     dots: false,
     responsive: {
       0: {
         items: 1
-      },
-      600: {
-        items: 2
       },
       1000: {
         items: 2

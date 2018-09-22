@@ -1,0 +1,41 @@
+// COUNTER
+#counter {
+  background-color: #1f1f1fc7;
+  .section-heading {
+    h3 {
+      text-align: left;
+      line-height: 50px;
+      &::before {
+        left: 0;
+        transform: none;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    p {
+      margin: 20px 0;
+      text-align: left;
+      line-height: 30px;
+      color: $third-color;
+    }
+  }
+  .counter-item {
+    padding: 20px 25px;
+    i {
+      font-size: $big-font-size * 2;
+      line-height: $big-font-size * 3;
+      color: $main-color;
+    }
+    .count {
+      padding-left: 20px;
+      font-size: $big-font-size * 2;
+    }
+    h4 {
+      padding: 10px;
+      font-size: $main-font-size;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}

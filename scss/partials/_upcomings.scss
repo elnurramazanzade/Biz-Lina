@@ -1,0 +1,143 @@
+// UPCOMINGS
+#upcomings {
+  .upcoming-head {
+    margin-top: 30px;
+    padding-bottom: 20px;
+    font-size: $head-font-size / 1.5;
+    font-weight: bold;
+    border-bottom: 2px solid #f7f7f7;
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      margin-right: 15px;
+    }
+  }
+  .upcoming-events {
+    .upcoming-head::before {
+      content: "\f073";
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 30px;
+      li {
+        display: flex;
+        padding-bottom: 30px;
+        .day {
+          width: 100px;
+          box-shadow: 0 5px 8px #fbfbfb;
+          text-align: center;
+          p {
+            background-color: #f3f1f1;
+            font-style: italic;
+            margin-bottom: 8px;
+          }
+          h2 {
+            font-size: 45px;
+            color: $text-color;
+          }
+        }
+        .day-new {
+          padding-left: 20px;
+          h6 {
+            a {
+              color: $second-color;
+              font-size: $main-font-size * 1.25;
+              font-weight: bold;
+              &:hover {
+                color: $main-color;
+                text-decoration: none;
+              }
+            }
+          }
+          p {
+            color: $text-color;
+          }
+        }
+      }
+    }
+  }
+  .upcoming-news {
+    .upcoming-head::before {
+      content: "\f1ea";
+    }
+    #carousel-2 {
+      position: relative;
+      .upcoming-item {
+        margin: 20px 10px;
+        box-shadow: 0px 0px 32px 0px rgba(122, 122, 122, 0.1);
+        transition: all 0.3s;
+        .image {
+          width: 100%;
+          overflow: hidden;
+          img {
+            width: 100%;
+            transition: all 1s;
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+        .content {
+          padding: 30px 30px 40px;
+          h5 {
+            a {
+              color: $second-color;
+              font-size: $main-font-size * 1.4;
+              font-weight: bold;
+              margin: 16px 0;
+              &:hover {
+                color: $main-color;
+                text-decoration: none;
+              }
+            }
+          }
+          span {
+            display: inline-block;
+            margin: 0 10px 20px 0;
+            font-size: $small-font-size;
+            color: $text-color;
+            &::before {
+              content: "\f07c";
+              font-family: "Font Awesome 5 Free";
+              font-size: 13px;
+              height: 15px;
+              margin-right: 8px;
+            }
+            &.date::before {
+              content: "\f274";
+            }
+          }
+          p {
+            font-size: $main-font-size;
+            line-height: 28px;
+            color: $text-color;
+          }
+        }
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
+        }
+      }
+      .owl-nav {
+        position: absolute;
+        top: -90px;
+        right: 0;
+        button {
+          margin-left: 16px;
+          width: 36px;
+          height: 36px;
+          background: #f5f5f5;
+          span {
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 25px;
+          }
+          &:hover {
+            color: $third-color;
+            background-color: $main-color;
+          }
+        }
+      }
+    }
+  }
+}
