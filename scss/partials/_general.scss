@@ -13,6 +13,9 @@ section {
   &.wp {
     padding: 90px 0;
   }
+  &.wbg {
+    background-color: $section-bg-color;
+  }
   .section-heading {
     h3 {
       position: relative;
@@ -74,6 +77,13 @@ section {
     text-decoration: none;
   }
 }
+@media (max-width: 991px) {
+  %main-btn {
+    width: 100px;
+    height: 35px;
+    padding: 5px 10px;
+  }
+}
 .white-btn {
   @extend %main-btn;
   background-color: $main-color;
@@ -101,6 +111,7 @@ section {
     color: white;
   }
 }
+
 // SCROLL BUTTON
 #btn-scrollup {
   display: none;

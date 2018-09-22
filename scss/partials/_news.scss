@@ -83,6 +83,12 @@
     background-color: #25292f;
     h3 {
       line-height: 45px;
+      padding: 0;
     }
+  }
+}
+@media (max-width: 767px) {
+  #buy-now h3 {
+    padding-bottom: 20px !important;
   }
 }

@@ -1,0 +1,104 @@
+// CONTACT
+#contact {
+  .contact-form {
+    padding: 40px;
+    background-color: $third-color;
+    box-shadow: 0 0 20px #efeded;
+    h3 {
+      font-size: $head-font-size / 1.5;
+      font-weight: bold;
+    }
+    p {
+      font-size: $main-font-size;
+      color: $text-color;
+    }
+    #message {
+      display: none;
+      .success {
+        text-align: center;
+        padding: 20px;
+        border: 5px solid #4def4d;
+        h2 {
+          padding-bottom: 10px;
+          font-size: $head-font-size;
+          font-weight: bold;
+        }
+        p {
+          font-size: $main-font-size;
+          color: $text-color;
+        }
+      }
+      span {
+        display: block;
+        margin-bottom: 10px;
+        font-size: $main-font-size;
+        color: red;
+      }
+    }
+    form {
+      .form-group {
+        .form-control {
+          padding: 10px 20px;
+          margin-bottom: 30px;
+          border: 1px solid #e7e7e7;
+          border-radius: 0;
+          color: black;
+        }
+        input {
+          height: 48px;
+        }
+        textarea {
+        }
+
+        &.name {
+        }
+        &.email {
+        }
+        &.text {
+        }
+      }
+    }
+    button {
+      border: none;
+      width: 180px;
+    }
+  }
+  .quick-contact {
+    padding: 40px;
+    background-color: $third-color;
+    box-shadow: 0 0 20px #efeded;
+    h3 {
+      font-size: $head-font-size / 1.5;
+      font-weight: bold;
+    }
+    ul {
+      list-style: none;
+      li {
+        margin-bottom: 10px;
+        color: $text-color;
+        i {
+          width: 40px;
+          height: 40px;
+          border: 1px solid #efeded;
+          border-radius: 100%;
+          font-size: $small-font-size;
+          line-height: 40px;
+          text-align: center;
+          margin-right: 15px;
+          color: $second-color;
+        }
+      }
+    }
+  }
+  .map {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: $third-color;
+    box-shadow: 0 0 20px #efeded;
+    iframe {
+      width: 100%;
+      height: 278px;
+      border: none;
+    }
+  }
+}

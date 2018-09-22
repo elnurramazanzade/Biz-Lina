@@ -1,4 +1,4 @@
-// COUNTER
+// COUNTER & WHY
 #counter {
   background-color: #1f1f1fc7;
   .section-heading {
@@ -36,6 +36,52 @@
       font-size: $main-font-size;
       font-weight: bold;
       text-align: center;
+    }
+  }
+}
+
+#why {
+  img {
+    width: 100%;
+  }
+  h3 {
+    text-align: left;
+  }
+  p {
+    line-height: 25px;
+    color: $text-color;
+  }
+  .progress-section {
+    .progress-info {
+      display: flex;
+      justify-content: space-between;
+      span {
+        font-size: $big-font-size;
+        font-weight: bold;
+        padding-bottom: 10px;
+      }
+    }
+    .progress {
+      margin-bottom: 30px;
+      height: 5px;
+      overflow: visible;
+      background-color: #f5f5f5;
+      .progress-bar {
+        height: 10px;
+        align-self: center;
+        &.management {
+          background-color: #67bbf7;
+        }
+        &.wordpress {
+          background-color: #7e87c9;
+        }
+        &.photoshop {
+          background-color: #c9048e;
+        }
+        &.javascript {
+          background-color: #dd9933;
+        }
+      }
     }
   }
 }
