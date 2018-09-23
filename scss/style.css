@@ -277,8 +277,6 @@ section .section-heading p {
       right: 0px;
       padding: 25px 30px;
       background-color: white;
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s;
       display: none;
       overflow: hidden; }
       #menu .social-search .search .search-form .form-group {
@@ -289,14 +287,17 @@ section .section-heading p {
           border: 5px solid #888;
           border-radius: 0; }
         #menu .social-search .search .search-form .form-group form .black-btn {
-          width: 100px; }
+          width: 100px;
+          height: 45px; }
 
 @media screen and (max-width: 1199px) {
   .social-search {
     width: 100%; } }
 @media screen and (max-width: 576px) {
   .search-form {
-    width: auto !important; } }
+    width: auto !important; }
+    .search-form .form-control {
+      width: auto !important; } }
 @-webkit-keyframes toLeft {
   from {
     margin-left: 50px; }
@@ -1048,5 +1049,123 @@ section .section-heading p {
     width: 100%;
     height: 278px;
     border: none; }
+
+#our-works #filter ul {
+  padding: 10px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  #our-works #filter ul li {
+    position: relative;
+    display: inline;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer; }
+    #our-works #filter ul li:not(:last-child) {
+      margin-right: 10px; }
+    #our-works #filter ul li.active {
+      color: #0b60a9; }
+      #our-works #filter ul li.active::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        bottom: 0;
+        background-color: #0b60a9; }
+    #our-works #filter ul li:hover {
+      color: #0b60a9; }
+      #our-works #filter ul li:hover::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        bottom: 0;
+        background-color: #0b60a9; }
+#our-works #works {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  #our-works #works .work-item {
+    padding: 10px; }
+    #our-works #works .work-item .portfolio {
+      position: relative;
+      height: 100%;
+      background-color: black;
+      overflow: hidden; }
+      #our-works #works .work-item .portfolio img {
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s; }
+      #our-works #works .work-item .portfolio .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        opacity: 0; }
+        #our-works #works .work-item .portfolio .content .open {
+          top: 80px; }
+          #our-works #works .work-item .portfolio .content .open i {
+            color: black;
+            background-color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            line-height: 40px;
+            text-align: center;
+            font-size: 16px; }
+        #our-works #works .work-item .portfolio .content a {
+          position: absolute;
+          top: 115px; }
+          #our-works #works .work-item .portfolio .content a h5 {
+            margin: 16px 0;
+            font-size: 22.4px;
+            font-weight: bold;
+            color: white; }
+          #our-works #works .work-item .portfolio .content a:hover {
+            text-decoration: none; }
+            #our-works #works .work-item .portfolio .content a:hover h5 {
+              color: #0b60a9; }
+        #our-works #works .work-item .portfolio .content p {
+          bottom: 65px;
+          position: absolute;
+          font-size: 16px;
+          line-height: 28px;
+          color: white; }
+      #our-works #works .work-item .portfolio:hover img {
+        opacity: 0.6; }
+      #our-works #works .work-item .portfolio:hover .content {
+        opacity: 1; }
+
+#touch .section-heading p:first-child {
+  margin-bottom: 20px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 2px; }
+
+#client-logos {
+  padding: 40px 0; }
+  #client-logos .client-logo a img {
+    width: 100%; }
+  #client-logos .client-logo a:hover img {
+    opacity: 0.8; }
 
 /*# sourceMappingURL=style.css.map */

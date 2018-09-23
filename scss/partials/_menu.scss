@@ -191,7 +191,6 @@
         right: 0px;
         padding: 25px 30px;
         background-color: $third-color;
-        transition: all 0.5s;
         display: none;
         overflow: hidden;
         .form-group {
@@ -205,6 +204,7 @@
             }
             .black-btn {
               width: 100px;
+              height: 45px;
             }
           }
         }
@@ -222,5 +222,8 @@
 @media screen and (max-width: 576px) {
   .search-form {
     width: auto !important;
+    .form-control {
+      width: auto !important;
+    }
   }
 }

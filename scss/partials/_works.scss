@@ -1,0 +1,119 @@
+// WORKS
+#our-works {
+  #filter {
+    ul {
+      padding: 10px;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      li {
+        position: relative;
+        display: inline;
+        padding: 10px;
+        font-size: $small-font-size;
+        font-weight: bold;
+        transition: all 0.5s;
+        cursor: pointer;
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+        &.active {
+          color: $main-color;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            left: 0;
+            bottom: 0;
+            background-color: $main-color;
+          }
+        }
+        &:hover {
+          color: $main-color;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            left: 0;
+            bottom: 0;
+            background-color: $main-color;
+          }
+        }
+      }
+    }
+  }
+  #works {
+    transition: all 0.5s;
+    .work-item {
+      padding: 10px;
+      .portfolio {
+        position: relative;
+        height: 100%;
+        background-color: black;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          transition: all 0.5s;
+        }
+        .content {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          transition: all 0.5s;
+          opacity: 0;
+          .open {
+            top: 80px;
+            i {
+              color: $second-color;
+              background-color: $third-color;
+              width: 40px;
+              height: 40px;
+              border-radius: 100%;
+              line-height: 40px;
+              text-align: center;
+              font-size: $main-font-size;
+            }
+          }
+          a {
+            position: absolute;
+            top: 115px;
+            h5 {
+              margin: 16px 0;
+              font-size: $main-font-size * 1.4;
+              font-weight: bold;
+              color: $third-color;
+            }
+            &:hover {
+              text-decoration: none;
+              h5 {
+                color: $main-color;
+              }
+            }
+          }
+          p {
+            bottom: 65px;
+            position: absolute;
+            font-size: $main-font-size;
+            line-height: 28px;
+            color: $third-color;
+          }
+        }
+        &:hover {
+          img {
+            opacity: 0.6;
+          }
+          .content {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
