@@ -90,7 +90,7 @@ section .section-heading p {
   position: fixed;
   bottom: 40px;
   right: 40px;
-  z-index: 11111; }
+  z-index: 111; }
   #btn-scrollup a {
     width: 40px;
     height: 40px;
@@ -98,6 +98,49 @@ section .section-heading p {
     #btn-scrollup a i {
       font-size: 18px;
       color: white; }
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8; }
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0; }
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1; }
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0; }
+
+@-webkit-keyframes popup {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes popup {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+img.mfp-img {
+  -webkit-animation: popup 1s;
+          animation: popup 1s; }
 
 #info .logo a:hover img {
   opacity: 0.8; }
@@ -1126,7 +1169,7 @@ section .section-heading p {
         transition: all 0.5s;
         opacity: 0; }
         #our-works #works .work-item .portfolio .content .open {
-          top: 80px; }
+          top: 25%; }
           #our-works #works .work-item .portfolio .content .open i {
             color: black;
             background-color: white;
@@ -1138,7 +1181,7 @@ section .section-heading p {
             font-size: 16px; }
         #our-works #works .work-item .portfolio .content a {
           position: absolute;
-          top: 115px; }
+          top: 40%; }
           #our-works #works .work-item .portfolio .content a h5 {
             margin: 16px 0;
             font-size: 22.4px;
@@ -1149,11 +1192,19 @@ section .section-heading p {
             #our-works #works .work-item .portfolio .content a:hover h5 {
               color: #0b60a9; }
         #our-works #works .work-item .portfolio .content p {
-          bottom: 65px;
+          bottom: 20%;
           position: absolute;
           font-size: 16px;
           line-height: 28px;
+          text-align: center;
           color: white; }
+        @media (max-width: 991px) {
+          #our-works #works .work-item .portfolio .content .open {
+            top: 10%; }
+          #our-works #works .work-item .portfolio .content a {
+            top: 30%; }
+          #our-works #works .work-item .portfolio .content p {
+            bottom: 0; } }
       #our-works #works .work-item .portfolio:hover img {
         opacity: 0.6; }
       #our-works #works .work-item .portfolio:hover .content {

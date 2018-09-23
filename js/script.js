@@ -111,4 +111,22 @@ $(document).ready(function() {
     var data = $(this).attr("data-filter");
     $("#works").isotope({ filter: data });
   });
+  // POPUP
+  $("#works").magnificPopup({
+    delegate: ".open",
+    type: "image",
+    autoFocusLast: false,
+    gallery: {
+      enabled: true
+    },
+    mainClass: "mfp-with-zoom",
+    zoom: {
+      enabled: true,
+      duration: 300,
+      easing: "ease-in-out",
+      opener: function(openerElement) {
+        return openerElement.is("i") ? openerElement : openerElement.find("i");
+      }
+    }
+  });
 });
