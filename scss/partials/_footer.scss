@@ -1,0 +1,187 @@
+// FOOTER
+#footer {
+  padding-top: 80px;
+  color: $footer-text-color;
+  background-color: #2e363a;
+  [class*="col"] {
+    padding: 0;
+  }
+  h3 {
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    font-size: $head-font-size / 1.5;
+    color: $third-color;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 50px;
+      height: 1px;
+      bottom: -1px;
+      background: #ffffff;
+    }
+  }
+  a {
+    color: $footer-text-color;
+    &:hover {
+      color: $third-color;
+      text-decoration: none;
+    }
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  .about-us {
+    padding-right: 40px;
+    p {
+      line-height: $main-font-size * 1.75;
+    }
+  }
+  .popular-news {
+    padding-right: 40px;
+    ul {
+      li {
+        padding-bottom: 10px;
+        a {
+          display: block;
+          font-weight: bold;
+        }
+        span {
+          font-size: $main-font-size * 0.75;
+          font-style: italic;
+          color: #bbc0d2;
+        }
+      }
+    }
+  }
+  .category {
+    padding-right: 40px;
+    ul {
+      padding-right: 20px;
+      li {
+        position: relative;
+        padding-bottom: 15px;
+        font-size: $small-font-size;
+        a {
+          &::before {
+            content: "\f105";
+            font-family: "Font Awesome 5 Free";
+            padding-right: 10px;
+            font-weight: 900;
+            color: $third-color;
+          }
+        }
+        span {
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+  }
+  .galery {
+    a {
+      display: block;
+      margin: 0 0 10px 15px;
+      background-color: $second-color;
+      img {
+        width: 100%;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  .footer-links {
+    ul {
+      li {
+        display: inline;
+        a {
+          padding-right: 15px;
+          &:hover {
+            color: $main-color;
+          }
+        }
+      }
+    }
+  }
+  .footer-social {
+    ul {
+      li {
+        padding-right: 15px;
+        a {
+          display: block;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          color: $footer-text-color;
+          border-radius: 100%;
+          border: 2px solid $footer-text-color;
+          transition: all 0.5s;
+          &::before {
+            font-family: "Font Awesome 5 Brands";
+            font-weight: 400;
+            line-height: 36px;
+            font-size: 15px;
+          }
+          &[href*="facebook.com"]::before {
+            content: "\f39e";
+          }
+          &[href*="twitter.com"]::before {
+            content: "\f099";
+          }
+          &[href*="linkedin.com"]::before {
+            content: "\f0e1";
+          }
+          &[href*="instagram.com"]::before {
+            content: "\f16d";
+          }
+          &[href*="vimeo.com"]::before {
+            content: "\f194";
+          }
+          &[href*="dribbble.com"]::before {
+            content: "\f17d";
+          }
+          &:hover {
+            text-decoration: none;
+          }
+          &[href*="facebook.com"]:hover {
+            background-color: #3b5998;
+            border: 2px solid #3b5998;
+          }
+          &[href*="twitter.com"]:hover {
+            background-color: #00aced;
+            border: 2px solid #00aced;
+          }
+          &[href*="linkedin.com"]:hover {
+            background-color: #007bb6;
+            border: 2px solid #007bb6;
+          }
+          &[href*="instagram.com"]:hover {
+            background-color: #517fa4;
+            border: 2px solid #517fa4;
+          }
+          &[href*="vimeo.com"]:hover {
+            background-color: #aad450;
+            border: 2px solid #aad450;
+          }
+          &[href*="dribbble.com"]:hover {
+            background-color: #ea4c89;
+            border: 2px solid #ea4c89;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    padding: 15px 0;
+    color: $third-color;
+    background-color: #25292f;
+    p {
+      margin: 0;
+      font-size: $small-font-size;
+      font-weight: bold;
+    }
+  }
+}

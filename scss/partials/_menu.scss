@@ -108,6 +108,9 @@
           }
         }
       }
+      &.drop-head > [class*="drop-menu"] {
+        box-shadow: 0 0px 20px rgba(166, 166, 166, 0.25);
+      }
       .big-drop-menu {
         left: -154px;
         width: 1140px;
@@ -213,17 +216,20 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media (max-width: 1199px) {
   .social-search {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 576px) {
-  .search-form {
-    width: auto !important;
-    .form-control {
+@media (max-width: 575px) {
+  .social-search {
+    padding: 0 15px;
+    .search-form {
       width: auto !important;
+      .form-control {
+        width: auto !important;
+      }
     }
   }
 }
