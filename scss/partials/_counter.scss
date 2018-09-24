@@ -69,6 +69,7 @@
       .progress-bar {
         height: 10px;
         align-self: center;
+        transition: all 1s;
         &.management {
           background-color: #67bbf7;
         }
