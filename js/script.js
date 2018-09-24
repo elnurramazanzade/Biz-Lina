@@ -129,4 +129,19 @@ $(document).ready(function() {
       }
     }
   });
+  // SIDR MENU
+  $("#sidr-button").sidr({
+    displace: false
+  });
+  $("#sidr-button").on("click", function() {
+    $(this).toggleClass("opened");
+  });
+  $("#sidr .nav-menu-item i").on("click", function() {
+    $(this).toggleClass("fa-angle-down");
+    $(this).toggleClass("fa-angle-up");
+    $(this)
+      .parent()
+      .find(".drop-menu")
+      .slideToggle();
+  });
 });

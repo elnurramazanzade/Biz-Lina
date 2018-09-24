@@ -170,3 +170,41 @@ section {
 img.mfp-img {
   animation: popup 1s;
 }
+
+// SIDR MENU
+#mobile-header {
+  background-color: #222;
+  #sidr-button {
+    display: block;
+    padding: 10px;
+    i {
+      color: $third-color;
+    }
+    &.opened {
+      padding-left: 270px;
+    }
+  }
+}
+#sidr {
+  .nav-menu-item {
+    position: relative;
+    .drop-menu {
+      display: none;
+    }
+    i {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      font-size: $main-font-size;
+      text-align: center;
+      background-color: #343434;
+      box-shadow: 0 0 37px #464444 inset;
+      cursor: pointer;
+      &::before {
+        line-height: 50px;
+      }
+    }
+  }
+}
