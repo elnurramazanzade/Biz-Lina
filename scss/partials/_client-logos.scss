@@ -1,0 +1,16 @@
+// CLIENT LOGOS
+#client-logos {
+  padding: 40px 0;
+  .client-logo {
+    a {
+      img {
+        width: 100%;
+      }
+      &:hover {
+        img {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

@@ -8,6 +8,14 @@ section.wp {
   padding: 90px 0; }
 section.wbg {
   background-color: #f6f8f9; }
+section .section-heading span {
+  display: block;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 2px; }
 section .section-heading h3 {
   position: relative;
   padding-bottom: 30px;
@@ -173,6 +181,112 @@ img.mfp-img {
     cursor: pointer; }
     #sidr .nav-menu-item i::before {
       line-height: 50px; }
+
+#page {
+  position: relative;
+  background-image: url("../img/custom-header/custom-header.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 300px; }
+  #page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5; }
+  #page h2 {
+    padding-top: 100px;
+    font-size: 45px; }
+  #page a,
+  #page span {
+    font-size: 16px; }
+  #page a {
+    margin-right: 10px;
+    color: #ddd;
+    border-bottom: 1px solid white; }
+    #page a:hover {
+      text-decoration: none;
+      color: white; }
+  #page span::before {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    font-weight: 900;
+    margin-right: 10px; }
+
+#single img {
+  width: 100%; }
+#single strong {
+  display: block;
+  line-height: 25px;
+  font-size: 18px; }
+#single p {
+  line-height: 25px;
+  color: #888; }
+#single ul {
+  list-style: none; }
+  #single ul li {
+    padding-bottom: 10px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #888; }
+  #single ul.pro-info li {
+    font-style: italic;
+    font-weight: bold; }
+    #single ul.pro-info li::before {
+      content: "\f00c";
+      font-family: "Font Awesome 5 Free";
+      padding-right: 20px;
+      font-size: 14px;
+      color: #0b60a9;
+      font-weight: 900; }
+#single .single-social ul {
+  padding: 0; }
+  #single .single-social ul li {
+    padding-right: 15px; }
+    #single .single-social ul li a {
+      display: block;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      color: #ddd;
+      border-radius: 100%;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s; }
+      #single .single-social ul li a::before {
+        font-family: "Font Awesome 5 Brands";
+        font-weight: 400;
+        line-height: 36px;
+        font-size: 15px; }
+      #single .single-social ul li a[href*="facebook.com"] {
+        background-color: #3b5998; }
+        #single .single-social ul li a[href*="facebook.com"]::before {
+          content: "\f39e"; }
+      #single .single-social ul li a[href*="twitter.com"] {
+        background-color: #00aced; }
+        #single .single-social ul li a[href*="twitter.com"]::before {
+          content: "\f099"; }
+      #single .single-social ul li a[href*="linkedin.com"] {
+        background-color: #007bb6; }
+        #single .single-social ul li a[href*="linkedin.com"]::before {
+          content: "\f0e1"; }
+      #single .single-social ul li a[href*="instagram.com"] {
+        background-color: #517fa4; }
+        #single .single-social ul li a[href*="instagram.com"]::before {
+          content: "\f16d"; }
+      #single .single-social ul li a[href*="vimeo.com"] {
+        background-color: #aad450; }
+        #single .single-social ul li a[href*="vimeo.com"]::before {
+          content: "\f194"; }
+      #single .single-social ul li a[href*="dribbble.com"] {
+        background-color: #ea4c89; }
+        #single .single-social ul li a[href*="dribbble.com"]::before {
+          content: "\f17d"; }
+      #single .single-social ul li a:hover {
+        text-decoration: none; }
 
 #info .logo a:hover img {
   opacity: 0.8; }
@@ -1243,13 +1357,6 @@ img.mfp-img {
         opacity: 0.6; }
       #our-works #works .work-item .portfolio:hover .content {
         opacity: 1; }
-
-#touch .section-heading p:first-child {
-  margin-bottom: 20px;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: 2px; }
 
 #client-logos {
   padding: 40px 0; }
