@@ -111,6 +111,9 @@
   .social-links {
     ul {
       li {
+        &:last-child {
+          padding-right: 0;
+        }
         a {
           color: $footer-text-color;
           border-radius: 100%;

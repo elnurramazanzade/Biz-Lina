@@ -145,6 +145,9 @@ section {
 // SOCIAL LINKS
 .social-links ul li {
   padding-right: 15px;
+  @media screen and (max-width: 575px) {
+    padding-right: 10px;
+  }
   a {
     display: block;
     width: 40px;

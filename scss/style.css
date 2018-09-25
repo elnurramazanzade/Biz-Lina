@@ -112,6 +112,9 @@ section .section-heading p {
 
 .social-links ul li {
   padding-right: 15px; }
+  @media screen and (max-width: 575px) {
+    .social-links ul li {
+      padding-right: 10px; } }
   .social-links ul li a {
     display: block;
     width: 40px;
@@ -430,7 +433,12 @@ img.mfp-img {
     .social-search .search-form {
       width: auto !important; }
       .social-search .search-form .form-control {
-        width: auto !important; } }
+        width: auto !important; }
+      .social-search .search-form .black-btn {
+        width: auto !important;
+        height: 30px !important;
+        padding: 5px 86px;
+        line-height: 20px; } }
 @-webkit-keyframes toLeft {
   from {
     margin-left: 50px; }
@@ -1419,6 +1427,8 @@ img.mfp-img {
       padding-right: 15px; }
       #footer .footer-links ul li a:hover {
         color: #0b60a9; }
+  #footer .social-links ul li:last-child {
+    padding-right: 0; }
   #footer .social-links ul li a {
     color: #ddd;
     border-radius: 100%;
