@@ -130,55 +130,8 @@
   .social-search {
     .social-links ul {
       padding: 8px 0;
-      li {
-        padding-right: 15px;
-        a {
-          display: block;
-          width: 40px;
-          height: 40px;
-          text-align: center;
-          transition: all 0.5s;
-          &::before {
-            font-family: "Font Awesome 5 Brands";
-            color: $third-color;
-            font-weight: 400;
-            line-height: 40px;
-            font-size: 15px;
-          }
-          &[href*="facebook.com"]::before {
-            content: "\f39e";
-          }
-          &[href*="youtube.com"]::before {
-            content: "\f167";
-          }
-          &[href*="twitter.com"]::before {
-            content: "\f099";
-          }
-          &[href*="linkedin.com"]::before {
-            content: "\f0e1";
-          }
-          &[href*="instagram.com"]::before {
-            content: "\f16d";
-          }
-          &:hover {
-            text-decoration: none;
-          }
-          &[href*="facebook.com"]:hover {
-            background-color: #3b5998;
-          }
-          &[href*="youtube.com"]:hover {
-            background-color: #bb0000;
-          }
-          &[href*="twitter.com"]:hover {
-            background-color: #00aced;
-          }
-          &[href*="linkedin.com"]:hover {
-            background-color: #007bb6;
-          }
-          &[href*="instagram.com"]:hover {
-            background-color: #517fa4;
-          }
-        }
+      li a::before {
+        color: $third-color;
       }
     }
     .search {

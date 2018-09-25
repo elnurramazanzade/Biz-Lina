@@ -110,6 +110,51 @@ section .section-heading p {
       font-size: 18px;
       color: white; }
 
+.social-links ul li {
+  padding-right: 15px; }
+  .social-links ul li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+    .social-links ul li a::before {
+      font-family: "Font Awesome 5 Brands";
+      font-weight: 400;
+      line-height: 40px;
+      font-size: 15px; }
+    .social-links ul li a[href*="facebook.com"]::before {
+      content: "\f39e"; }
+    .social-links ul li a[href*="youtube.com"]::before {
+      content: "\f167"; }
+    .social-links ul li a[href*="twitter.com"]::before {
+      content: "\f099"; }
+    .social-links ul li a[href*="linkedin.com"]::before {
+      content: "\f0e1"; }
+    .social-links ul li a[href*="instagram.com"]::before {
+      content: "\f16d"; }
+    .social-links ul li a[href*="vimeo.com"]::before {
+      content: "\f194"; }
+    .social-links ul li a[href*="dribbble.com"]::before {
+      content: "\f17d"; }
+    .social-links ul li a:hover {
+      text-decoration: none; }
+    .social-links ul li a[href*="facebook.com"]:hover {
+      background-color: #3b5998; }
+    .social-links ul li a[href*="youtube.com"]:hover {
+      background-color: #bb0000; }
+    .social-links ul li a[href*="twitter.com"]:hover {
+      background-color: #00aced; }
+    .social-links ul li a[href*="linkedin.com"]:hover {
+      background-color: #007bb6; }
+    .social-links ul li a[href*="instagram.com"]:hover {
+      background-color: #517fa4; }
+    .social-links ul li a[href*="vimeo.com"]:hover {
+      background-color: #aad450; }
+    .social-links ul li a[href*="dribbble.com"]:hover {
+      background-color: #ea4c89; }
+
 /* overlay at start */
 .mfp-fade.mfp-bg {
   opacity: 0;
@@ -216,77 +261,6 @@ img.mfp-img {
     font-size: 12px;
     font-weight: 900;
     margin-right: 10px; }
-
-#single img {
-  width: 100%; }
-#single strong {
-  display: block;
-  line-height: 25px;
-  font-size: 18px; }
-#single p {
-  line-height: 25px;
-  color: #888; }
-#single ul {
-  list-style: none; }
-  #single ul li {
-    padding-bottom: 10px;
-    line-height: 20px;
-    font-size: 16px;
-    color: #888; }
-  #single ul.pro-info li {
-    font-style: italic;
-    font-weight: bold; }
-    #single ul.pro-info li::before {
-      content: "\f00c";
-      font-family: "Font Awesome 5 Free";
-      padding-right: 20px;
-      font-size: 14px;
-      color: #0b60a9;
-      font-weight: 900; }
-#single .single-social ul {
-  padding: 0; }
-  #single .single-social ul li {
-    padding-right: 15px; }
-    #single .single-social ul li a {
-      display: block;
-      width: 40px;
-      height: 40px;
-      text-align: center;
-      color: #ddd;
-      border-radius: 100%;
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s; }
-      #single .single-social ul li a::before {
-        font-family: "Font Awesome 5 Brands";
-        font-weight: 400;
-        line-height: 36px;
-        font-size: 15px; }
-      #single .single-social ul li a[href*="facebook.com"] {
-        background-color: #3b5998; }
-        #single .single-social ul li a[href*="facebook.com"]::before {
-          content: "\f39e"; }
-      #single .single-social ul li a[href*="twitter.com"] {
-        background-color: #00aced; }
-        #single .single-social ul li a[href*="twitter.com"]::before {
-          content: "\f099"; }
-      #single .single-social ul li a[href*="linkedin.com"] {
-        background-color: #007bb6; }
-        #single .single-social ul li a[href*="linkedin.com"]::before {
-          content: "\f0e1"; }
-      #single .single-social ul li a[href*="instagram.com"] {
-        background-color: #517fa4; }
-        #single .single-social ul li a[href*="instagram.com"]::before {
-          content: "\f16d"; }
-      #single .single-social ul li a[href*="vimeo.com"] {
-        background-color: #aad450; }
-        #single .single-social ul li a[href*="vimeo.com"]::before {
-          content: "\f194"; }
-      #single .single-social ul li a[href*="dribbble.com"] {
-        background-color: #ea4c89; }
-        #single .single-social ul li a[href*="dribbble.com"]::before {
-          content: "\f17d"; }
-      #single .single-social ul li a:hover {
-        text-decoration: none; }
 
 #info .logo a:hover img {
   opacity: 0.8; }
@@ -420,43 +394,8 @@ img.mfp-img {
             border-right: 1px solid #eeeeee; }
   #menu .social-search .social-links ul {
     padding: 8px 0; }
-    #menu .social-search .social-links ul li {
-      padding-right: 15px; }
-      #menu .social-search .social-links ul li a {
-        display: block;
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s; }
-        #menu .social-search .social-links ul li a::before {
-          font-family: "Font Awesome 5 Brands";
-          color: white;
-          font-weight: 400;
-          line-height: 40px;
-          font-size: 15px; }
-        #menu .social-search .social-links ul li a[href*="facebook.com"]::before {
-          content: "\f39e"; }
-        #menu .social-search .social-links ul li a[href*="youtube.com"]::before {
-          content: "\f167"; }
-        #menu .social-search .social-links ul li a[href*="twitter.com"]::before {
-          content: "\f099"; }
-        #menu .social-search .social-links ul li a[href*="linkedin.com"]::before {
-          content: "\f0e1"; }
-        #menu .social-search .social-links ul li a[href*="instagram.com"]::before {
-          content: "\f16d"; }
-        #menu .social-search .social-links ul li a:hover {
-          text-decoration: none; }
-        #menu .social-search .social-links ul li a[href*="facebook.com"]:hover {
-          background-color: #3b5998; }
-        #menu .social-search .social-links ul li a[href*="youtube.com"]:hover {
-          background-color: #bb0000; }
-        #menu .social-search .social-links ul li a[href*="twitter.com"]:hover {
-          background-color: #00aced; }
-        #menu .social-search .social-links ul li a[href*="linkedin.com"]:hover {
-          background-color: #007bb6; }
-        #menu .social-search .social-links ul li a[href*="instagram.com"]:hover {
-          background-color: #517fa4; }
+    #menu .social-search .social-links ul li a::before {
+      color: white; }
   #menu .social-search .search {
     position: relative; }
     #menu .social-search .search a {
@@ -894,39 +833,11 @@ img.mfp-img {
     #our-team .team-item .social-links ul li {
       padding: 0 6px; }
       #our-team .team-item .social-links ul li a {
-        display: block;
-        width: 40px;
-        height: 40px;
-        border-radius: 100%;
-        text-align: center;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s; }
+        border-radius: 100%; }
         #our-team .team-item .social-links ul li a::before {
-          font-family: "Font Awesome 5 Brands";
-          color: #888;
-          font-weight: 400;
-          line-height: 40px;
-          font-size: 15px; }
-        #our-team .team-item .social-links ul li a[href*="facebook.com"]::before {
-          content: "\f39e"; }
-        #our-team .team-item .social-links ul li a[href*="twitter.com"]::before {
-          content: "\f099"; }
-        #our-team .team-item .social-links ul li a[href*="linkedin.com"]::before {
-          content: "\f0e1"; }
-        #our-team .team-item .social-links ul li a[href*="instagram.com"]::before {
-          content: "\f16d"; }
-        #our-team .team-item .social-links ul li a:hover {
-          text-decoration: none; }
-          #our-team .team-item .social-links ul li a:hover::before {
-            color: white; }
-        #our-team .team-item .social-links ul li a[href*="facebook.com"]:hover {
-          background-color: #3b5998; }
-        #our-team .team-item .social-links ul li a[href*="twitter.com"]:hover {
-          background-color: #00aced; }
-        #our-team .team-item .social-links ul li a[href*="linkedin.com"]:hover {
-          background-color: #007bb6; }
-        #our-team .team-item .social-links ul li a[href*="instagram.com"]:hover {
-          background-color: #517fa4; }
+          color: #888; }
+        #our-team .team-item .social-links ul li a:hover::before {
+          color: white; }
   #our-team .team-item:hover {
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
@@ -1508,55 +1419,24 @@ img.mfp-img {
       padding-right: 15px; }
       #footer .footer-links ul li a:hover {
         color: #0b60a9; }
-  #footer .footer-social ul li {
-    padding-right: 15px; }
-    #footer .footer-social ul li a {
-      display: block;
-      width: 40px;
-      height: 40px;
-      text-align: center;
-      color: #ddd;
-      border-radius: 100%;
-      border: 2px solid #ddd;
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s; }
-      #footer .footer-social ul li a::before {
-        font-family: "Font Awesome 5 Brands";
-        font-weight: 400;
-        line-height: 36px;
-        font-size: 15px; }
-      #footer .footer-social ul li a[href*="facebook.com"]::before {
-        content: "\f39e"; }
-      #footer .footer-social ul li a[href*="twitter.com"]::before {
-        content: "\f099"; }
-      #footer .footer-social ul li a[href*="linkedin.com"]::before {
-        content: "\f0e1"; }
-      #footer .footer-social ul li a[href*="instagram.com"]::before {
-        content: "\f16d"; }
-      #footer .footer-social ul li a[href*="vimeo.com"]::before {
-        content: "\f194"; }
-      #footer .footer-social ul li a[href*="dribbble.com"]::before {
-        content: "\f17d"; }
-      #footer .footer-social ul li a:hover {
-        text-decoration: none; }
-      #footer .footer-social ul li a[href*="facebook.com"]:hover {
-        background-color: #3b5998;
-        border: 2px solid #3b5998; }
-      #footer .footer-social ul li a[href*="twitter.com"]:hover {
-        background-color: #00aced;
-        border: 2px solid #00aced; }
-      #footer .footer-social ul li a[href*="linkedin.com"]:hover {
-        background-color: #007bb6;
-        border: 2px solid #007bb6; }
-      #footer .footer-social ul li a[href*="instagram.com"]:hover {
-        background-color: #517fa4;
-        border: 2px solid #517fa4; }
-      #footer .footer-social ul li a[href*="vimeo.com"]:hover {
-        background-color: #aad450;
-        border: 2px solid #aad450; }
-      #footer .footer-social ul li a[href*="dribbble.com"]:hover {
-        background-color: #ea4c89;
-        border: 2px solid #ea4c89; }
+  #footer .social-links ul li a {
+    color: #ddd;
+    border-radius: 100%;
+    border: 2px solid #ddd; }
+    #footer .social-links ul li a::before {
+      line-height: 36px; }
+    #footer .social-links ul li a[href*="facebook.com"]:hover {
+      border: 2px solid #3b5998; }
+    #footer .social-links ul li a[href*="twitter.com"]:hover {
+      border: 2px solid #00aced; }
+    #footer .social-links ul li a[href*="linkedin.com"]:hover {
+      border: 2px solid #007bb6; }
+    #footer .social-links ul li a[href*="instagram.com"]:hover {
+      border: 2px solid #517fa4; }
+    #footer .social-links ul li a[href*="vimeo.com"]:hover {
+      border: 2px solid #aad450; }
+    #footer .social-links ul li a[href*="dribbble.com"]:hover {
+      border: 2px solid #ea4c89; }
   #footer .copyright {
     padding: 15px 0;
     color: white;
@@ -1565,5 +1445,51 @@ img.mfp-img {
       margin: 0;
       font-size: 14px;
       font-weight: bold; }
+
+#single img {
+  width: 100%; }
+#single strong {
+  display: block;
+  line-height: 25px;
+  font-size: 18px; }
+#single p {
+  line-height: 25px;
+  color: #888; }
+#single ul {
+  list-style: none; }
+  #single ul li {
+    padding-bottom: 10px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #888; }
+  #single ul.pro-info li {
+    font-style: italic;
+    font-weight: bold; }
+    #single ul.pro-info li::before {
+      content: "\f00c";
+      font-family: "Font Awesome 5 Free";
+      padding-right: 20px;
+      font-size: 14px;
+      color: #0b60a9;
+      font-weight: 900; }
+#single .social-links ul {
+  padding: 0; }
+  #single .social-links ul li a {
+    color: white;
+    border-radius: 100%; }
+    #single .social-links ul li a[href*="facebook.com"] {
+      background-color: #3b5998; }
+    #single .social-links ul li a[href*="youtube.com"] {
+      background-color: #bb0000; }
+    #single .social-links ul li a[href*="twitter.com"] {
+      background-color: #00aced; }
+    #single .social-links ul li a[href*="linkedin.com"] {
+      background-color: #007bb6; }
+    #single .social-links ul li a[href*="instagram.com"] {
+      background-color: #517fa4; }
+    #single .social-links ul li a[href*="vimeo.com"] {
+      background-color: #aad450; }
+    #single .social-links ul li a[href*="dribbble.com"] {
+      background-color: #ea4c89; }
 
 /*# sourceMappingURL=style.css.map */

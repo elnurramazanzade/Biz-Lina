@@ -142,6 +142,69 @@ section {
   }
 }
 
+// SOCIAL LINKS
+.social-links ul li {
+  padding-right: 15px;
+  a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    transition: all 0.5s;
+    &::before {
+      font-family: "Font Awesome 5 Brands";
+      font-weight: 400;
+      line-height: 40px;
+      font-size: 15px;
+    }
+    &[href*="facebook.com"]::before {
+      content: "\f39e";
+    }
+    &[href*="youtube.com"]::before {
+      content: "\f167";
+    }
+    &[href*="twitter.com"]::before {
+      content: "\f099";
+    }
+    &[href*="linkedin.com"]::before {
+      content: "\f0e1";
+    }
+    &[href*="instagram.com"]::before {
+      content: "\f16d";
+    }
+    &[href*="vimeo.com"]::before {
+      content: "\f194";
+    }
+    &[href*="dribbble.com"]::before {
+      content: "\f17d";
+    }
+    &:hover {
+      text-decoration: none;
+    }
+    &[href*="facebook.com"]:hover {
+      background-color: #3b5998;
+    }
+    &[href*="youtube.com"]:hover {
+      background-color: #bb0000;
+    }
+    &[href*="twitter.com"]:hover {
+      background-color: #00aced;
+    }
+    &[href*="linkedin.com"]:hover {
+      background-color: #007bb6;
+    }
+    &[href*="instagram.com"]:hover {
+      background-color: #517fa4;
+    }
+    &[href*="vimeo.com"]:hover {
+      background-color: #aad450;
+    }
+    &[href*="dribbble.com"]:hover {
+      background-color: #ea4c89;
+    }
+  }
+}
+
 // POPUP
 /* overlay at start */
 .mfp-fade.mfp-bg {
@@ -156,7 +219,6 @@ section {
 .mfp-fade.mfp-bg.mfp-removing {
   opacity: 0;
 }
-
 /* content at start */
 .mfp-fade.mfp-wrap .mfp-content {
   opacity: 0;
@@ -262,106 +324,6 @@ img.mfp-img {
       font-size: 12px;
       font-weight: 900;
       margin-right: 10px;
-    }
-  }
-}
-
-#single {
-  img {
-    width: 100%;
-  }
-  strong {
-    display: block;
-    line-height: 25px;
-    font-size: $big-font-size;
-  }
-  p {
-    line-height: 25px;
-    color: $text-color;
-  }
-  ul {
-    list-style: none;
-    li {
-      padding-bottom: 10px;
-      line-height: 20px;
-      font-size: $main-font-size;
-      color: $text-color;
-    }
-    &.pro-info {
-      li {
-        font-style: italic;
-        font-weight: bold;
-        &::before {
-          content: "\f00c";
-          font-family: "Font Awesome 5 Free";
-          padding-right: 20px;
-          font-size: $small-font-size;
-          color: $main-color;
-          font-weight: 900;
-        }
-      }
-    }
-  }
-  .single-social {
-    ul {
-      padding: 0;
-      li {
-        padding-right: 15px;
-        a {
-          display: block;
-          width: 40px;
-          height: 40px;
-          text-align: center;
-          color: $footer-text-color;
-          border-radius: 100%;
-          transition: all 0.5s;
-          &::before {
-            font-family: "Font Awesome 5 Brands";
-            font-weight: 400;
-            line-height: 36px;
-            font-size: 15px;
-          }
-          &[href*="facebook.com"] {
-            background-color: #3b5998;
-            &::before {
-              content: "\f39e";
-            }
-          }
-          &[href*="twitter.com"] {
-            background-color: #00aced;
-            &::before {
-              content: "\f099";
-            }
-          }
-          &[href*="linkedin.com"] {
-            background-color: #007bb6;
-            &::before {
-              content: "\f0e1";
-            }
-          }
-          &[href*="instagram.com"] {
-            background-color: #517fa4;
-            &::before {
-              content: "\f16d";
-            }
-          }
-          &[href*="vimeo.com"] {
-            background-color: #aad450;
-            &::before {
-              content: "\f194";
-            }
-          }
-          &[href*="dribbble.com"] {
-            background-color: #ea4c89;
-            &::before {
-              content: "\f17d";
-            }
-          }
-          &:hover {
-            text-decoration: none;
-          }
-        }
-      }
     }
   }
 }

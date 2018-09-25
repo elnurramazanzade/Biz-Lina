@@ -1,0 +1,70 @@
+// SINGLE PORTFOLIO
+#single {
+  img {
+    width: 100%;
+  }
+  strong {
+    display: block;
+    line-height: 25px;
+    font-size: $big-font-size;
+  }
+  p {
+    line-height: 25px;
+    color: $text-color;
+  }
+  ul {
+    list-style: none;
+    li {
+      padding-bottom: 10px;
+      line-height: 20px;
+      font-size: $main-font-size;
+      color: $text-color;
+    }
+    &.pro-info {
+      li {
+        font-style: italic;
+        font-weight: bold;
+        &::before {
+          content: "\f00c";
+          font-family: "Font Awesome 5 Free";
+          padding-right: 20px;
+          font-size: $small-font-size;
+          color: $main-color;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+  .social-links {
+    ul {
+      padding: 0;
+      li {
+        a {
+          color: $third-color;
+          border-radius: 100%;
+          &[href*="facebook.com"] {
+            background-color: #3b5998;
+          }
+          &[href*="youtube.com"] {
+            background-color: #bb0000;
+          }
+          &[href*="twitter.com"] {
+            background-color: #00aced;
+          }
+          &[href*="linkedin.com"] {
+            background-color: #007bb6;
+          }
+          &[href*="instagram.com"] {
+            background-color: #517fa4;
+          }
+          &[href*="vimeo.com"] {
+            background-color: #aad450;
+          }
+          &[href*="dribbble.com"] {
+            background-color: #ea4c89;
+          }
+        }
+      }
+    }
+  }
+}

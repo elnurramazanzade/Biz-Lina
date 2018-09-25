@@ -108,68 +108,32 @@
       }
     }
   }
-  .footer-social {
+  .social-links {
     ul {
       li {
-        padding-right: 15px;
         a {
-          display: block;
-          width: 40px;
-          height: 40px;
-          text-align: center;
           color: $footer-text-color;
           border-radius: 100%;
           border: 2px solid $footer-text-color;
-          transition: all 0.5s;
           &::before {
-            font-family: "Font Awesome 5 Brands";
-            font-weight: 400;
             line-height: 36px;
-            font-size: 15px;
-          }
-          &[href*="facebook.com"]::before {
-            content: "\f39e";
-          }
-          &[href*="twitter.com"]::before {
-            content: "\f099";
-          }
-          &[href*="linkedin.com"]::before {
-            content: "\f0e1";
-          }
-          &[href*="instagram.com"]::before {
-            content: "\f16d";
-          }
-          &[href*="vimeo.com"]::before {
-            content: "\f194";
-          }
-          &[href*="dribbble.com"]::before {
-            content: "\f17d";
-          }
-          &:hover {
-            text-decoration: none;
           }
           &[href*="facebook.com"]:hover {
-            background-color: #3b5998;
             border: 2px solid #3b5998;
           }
           &[href*="twitter.com"]:hover {
-            background-color: #00aced;
             border: 2px solid #00aced;
           }
           &[href*="linkedin.com"]:hover {
-            background-color: #007bb6;
             border: 2px solid #007bb6;
           }
           &[href*="instagram.com"]:hover {
-            background-color: #517fa4;
             border: 2px solid #517fa4;
           }
           &[href*="vimeo.com"]:hover {
-            background-color: #aad450;
             border: 2px solid #aad450;
           }
           &[href*="dribbble.com"]:hover {
-            background-color: #ea4c89;
             border: 2px solid #ea4c89;
           }
         }
